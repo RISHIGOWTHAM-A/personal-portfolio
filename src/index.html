@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Hero</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+    <header
+        class="bg-[#0a0a23] bg-[radial-gradient(#1e1e3f_1px,transparent_1px)] bg-[length:40px_40px] text-center text-white py-5">
+        <div class="flex mx-5 lg:justify-center items-center justify-between">
+            <button class="relative p-2 rounded-lg md:hidden lg:hidden  text-blue-500 bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-200" aria-label="Toggle theme">
+                <div class="relative w-5 h-5">
+                    <p class="flex items-center gap-5 justify-center">R</p>
+                </div>
+            </button>
+            <nav class="hidden md:block">
+                <ul class="w-full md:flex md:gap-5 md:mx-2 justify-center items-center lg:gap-12 ">
+                    <li class="hover:text-blue-500">Home</li>
+                    <a href="#about">
+                        <li class="hover:text-blue-500">About</li>
+                    </a>
+                    <a href="#services">
+                        <li class="hover:text-blue-500">Services</li>
+                    </a>
+                    <a href="#Skills">
+                        <li class="hover:text-blue-500">Skills</li>
+                    </a>
+                    <a href="#Projects">
+                        <li class="hover:text-blue-500">Projects</li>
+                    </a>
+                    <a href="#Certifications">
+                        <li class="hover:text-blue-500">Certifications</li>
+                    </a>
+                    <a href="#Education">
+                        <li class="hover:text-blue-500">Education</li>
+                    </a>
+                    <li><a class="font-bold text-blue-500 hover:text-black  md:rounded-lg md:bg-blue-600 md:p-2 md:text-white"
+                            href="#">Request a Project →</a></li>
+                </ul>
+            </nav>
+            <button class="p-2 openMenu rounded-lg md:hidden lg:hidden  bg-gray-200 dark:bg-gray-800 hover:bg-gray-300 dark:hover:bg-gray-700" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu w-5 h-5">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+            </button>
+
+            <!-- Overlay Menu -->
+            <div class="overlay hidden fixed inset-0 bg-black bg-opacity-70 md:hidden z-50 items-center justify-center mt-24">
+                <nav>
+                    <button class="closeMenu absolute top-5 right-5 text-white text-xl hover:text-gray-300">✕</button>
+                    <ul
+                        class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-[360px] w-[280px] bg-slate-500 flex flex-col gap-4 justify-center items-center p-6 z-[999] rounded-lg">
+                        <a href="#Home"><li class="text-white hover:text-blue-300 cursor-pointer">Home</li></a>
+                        <a href="#about"><li class="text-white hover:text-blue-300 cursor-pointer">About</li></a>
+                        <a href="#services"><li class="text-white hover:text-blue-300 cursor-pointer">Services</li></a>
+                        <a href="#Skills"><li class="text-white hover:text-blue-300 cursor-pointer">Skills</li></a>
+                        <a href="#Projects"><li class="text-white hover:text-blue-300 cursor-pointer">Projects</li></a>
+                        <a href="#Certifications"><li class="text-white hover:text-blue-300 cursor-pointer">Certifications</li></a>
+                        <a href="#Education"><li class="text-white hover:text-blue-300 cursor-pointer">Education</li></a>
+                        <li><a class="text-white bg-blue-600 w-[250px] h-fit flex justify-center p-2 rounded-lg hover:bg-blue-700 transition-colors"
+                        href="#">Request a Project →</a></li>
+                    </ul>
+                </nav>
+                <script src="./script.js"></script>
+            </div>
+        </div>
+    </header>
+
+
+<!--Home-->
+    <section
+        class=" bg-[#0a0a23] bg-[radial-gradient(#1e1e3f_1px,transparent_1px)] bg-[length:40px_40px] text-white min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 md:gap-12  py-12 relative overflow-hidden"
+        id="Home">
+
+        <div class="z-10 text-center  mt-5 order-2 md:block md:mx-3 md:order-1 lg:order-1 lg:mx-12">
+            <div class="inline-block px-4 py-1 bg-blue-500 text-sm rounded-full mb-3">Hey! 👋 I'm</div>
+            <h1
+                class="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-pink-500">
+                A.Rishi</h1>
+
+            <div
+                class="mt-6 space-y-2 text-sm text-gray-400 lg:mt-10 lg:text-lg lg:space-y-4 flex flex-col gap-2 justify-center items-center">
+                <div class="flex items-center gap-2">
+                    <span>📞</span> <span>+91 6374551993</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>✉️</span> <span>arishigowtham@gmail.com</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>📍</span> <span>Chennai, India</span>
+                </div>
+            </div>
+
+
+            <div
+                class="flex flex-col items-center justify-center gap-3 mt-5 lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-5">
+                <a href="resume.pdf" download="My_Resume.pdf"
+                    class="p-2 bg-blue-500 rounded-lg flex justify-center items-center gap-1 w-[150px] h-fit font-medium text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                    </svg>
+                    View Resume
+                </a>
+                <p></p>
+                <a href="#Contact">
+                <button
+                    class="p-2 rounded-lg  bg-blue-500 text-black flex justify-center gap-1 w-[150px] h-fit font-medium"><svg
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0"
+                        stroke="currentColor" class="size-6 flex justify-center items-center  ">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    Contact me
+                </button>
+                </a>
+            </div>
+        </div>
+        <div class="z-10 mt-5 order-1 md:order-2 lg:order-2">
+            <img src="/images/Rishi.jpg " alt="profile" class="rounded-full w-[270px] h-[270px] md:w-[350px] md:h-[350px] object-cover shadow-2xl border-4 border-blue-500
+                lg:w-[500px] lg:h-[400px] xl:h-[500px] xl:w-[500px] lg:mt-0 lg:mb-10 lg:mr-10 lg:ml-10">
+        </div>
+    </section>
+
+
+
+    <!--About-->
+    <section class="bg-gray-900 py-12 " id="about">
+        <div class="flex flex-col items-center justify-center mx-5">
+            <h2 class="relative group mt-10"><span
+                    class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">About
+                    Me</span>
+            </h2>
+            <p class="text-lg text-white font-medium text-center px-3 lg:text-ellipsis">
+                Passionate developer building innovative solutions and solving real-world problems.
+            </p>
+            <div class="flex items-center space-x-2 mt-3">
+                <div class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                </div>
+                <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                <div class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center mt-5 ">
+            <p class="text-gray-300 text-base leading-relaxed text-center max-w-xl px-4 lg:text-lg lg:max-w-4xl">
+                Hey there! 👋 I'm <span class="text-blue-400 font-semibold">A Rishi</span>, a B.E Computer Science and
+                Engineering student passionate about building web applications that solve real-world problems. I've
+                created projects like Aquawatt for monitoring the usage of water and electricity.
+            </p>
+        </div>
+        <div class="flex items-center justify-center mt-5">
+            <button
+                class="px-2 py-2 bg-blue-700 w-[275px] h-fit text-white rounded-md whitespace-nowrap text-sm md:text-base md:w-fit lg:w-fit">
+                🚀 I like to build smart solutions for future
+            </button>
+        </div>
+        <div
+            class="mx-10 grid grid-cols-1 gap-5 mt-5 md:grid-cols-2 lg:grid-cols-4 md:gap-10 lg:gap-5 place-items-center">
+
+            <!-- Card 1 -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-lg w-full max-w-md">
+                <div class="flex items-center gap-3 justify-start">
+                    <div class="bg-blue-600 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                           stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                           class="w-6 h-6 text-white">
+                        <circle cx="12" cy="8" r="5"></circle>
+                        <path d="M20 21a8 8 0 0 0-16 0"></path>
+                      </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white">Who I Am</h2>
+                  </div>
+                  
+                             
+                <ul class="text-gray-300 list-disc list-inside space-y-2 mt-5">
+                    <li>Develop high-performance web apps using modern tech.</li>
+                    <li>Solve algorithmic problems and optimize code efficiency.</li>
+                    <li>Contribute to open-source and follow industry trends.</li>
+                </ul>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-lg w-full max-w-md">
+                <div class="flex items-center gap-3 lg:justify-start">
+                    <div class="bg-purple-600 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                            <path d="m18 16 4-4-4-4"></path>
+                            <path d="m6 8-4 4 4 4"></path>
+                            <path d="m14.5 4-5 16"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white">What I Do</h2>
+                </div>
+                <ul class="text-gray-300 list-disc list-inside space-y-2 mt-5">
+                    <li>Develop high-performance web apps using modern tech.</li>
+                    <li>Solve algorithmic problems and optimize code efficiency.</li>
+                    <li>Contribute to open-source and follow industry trends.</li>
+                </ul>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-lg w-full max-w-md">
+                <div class="flex items-center gap-3 lg:justify-start">
+                    <div class="bg-green-600 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                            class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.172 6.75h-1.861l-4.566 4.564a1.874 1.874 0 1 1-1.06-1.06l4.565-4.565V3.828a.94.94 0 0 1 .275-.664l1.73-1.73a.249.249 0 0 1 .25-.063c.089.026.155.1.173.191l.46 2.301 2.3.46c.09.018.164.084.19.173a.25.25 0 0 1-.062.249l-1.731 1.73a.937.937 0 0 1-.663.275Z">
+                            </path>
+                            <path
+                                d="M2.625 12A9.375 9.375 0 0 0 12 21.375 9.375 9.375 0 0 0 21.375 12c0-.898-.126-1.766-.361-2.587A.75.75 0 0 1 22.455 9c.274.954.42 1.96.42 3 0 6.006-4.869 10.875-10.875 10.875S1.125 18.006 1.125 12 5.994 1.125 12 1.125c1.015-.001 2.024.14 3 .419a.75.75 0 1 1-.413 1.442A9.39 9.39 0 0 0 12 2.625 9.375 9.375 0 0 0 2.625 12Z">
+                            </path>
+                            <path
+                                d="M7.125 12a4.874 4.874 0 1 0 9.717-.569.748.748 0 0 1 1.047-.798c.251.112.42.351.442.625a6.373 6.373 0 0 1-10.836 5.253 6.376 6.376 0 0 1 5.236-10.844.75.75 0 1 1-.17 1.49A4.876 4.876 0 0 0 7.125 12Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white">My Goals</h2>
+                </div>
+                <ul class="text-gray-300 list-disc list-inside space-y-2 mt-5">
+                    <li>Develop high-performance web apps using modern tech.</li>
+                    <li>Solve algorithmic problems and optimize code efficiency.</li>
+                    <li>Contribute to open-source and follow industry trends.</li>
+                </ul>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 shadow-lg w-full max-w-md">
+                <div class="flex items-center gap-3 lg:justify-start">
+                    <div class="bg-orange-600 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-white">
+                            <path
+                                d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
+                            </path>
+                            <path d="M9 18h6"></path>
+                            <path d="M10 22h4"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-xl font-semibold text-white">My Philosophy</h2>
+                </div>
+                <ul class="text-gray-300 list-disc list-inside space-y-2 mt-5">
+                    <li>Develop high-performance web apps using modern tech.</li>
+                    <li>Solve algorithmic problems and optimize code efficiency.</li>
+                    <li>Contribute to open-source and follow industry trends.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Services-->
+    <section class="bg-gray-900" id="services">
+        <div class="flex flex-col items-center justify-center ">
+            <div class="flex flex-col items-center justify-center">
+                <h2 class="relative group mt-10"><span
+                        class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">Services</span>
+                </h2>
+                <p class="text-xl mt-2 text-white font-medium text-center px-3 lg:text-ellipsis">
+                    what i offer
+                </p>
+                <div class="flex items-center space-x-2 mt-3">
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                </div>
+            </div>
+            <div class=" mt-10 lg:mt-16 flex items-center justify-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 cursor-pointer">
+
+                    <!-- Card 1 -->
+                    <div class="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-lg w-[270px]  transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                        before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                        style="--glow-color: #ff00d0;">
+                        <img src="../images/gd.jpg" alt="Graphic Design" class="w-full h-[180px] object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-center items-center gap-3 mt-2">
+                                <div
+                                    class="p-3 bg-pink-500 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="w-6 h-6 text-white">
+                                        <path
+                                            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5">
+                                        </path>
+                                        <path d="M9 18h6"></path>
+                                        <path d="M10 22h4"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="text-2xl font-bold text-white">Graphic Design</h2>
+                            </div>
+                            <p class="text-center text-sm text-gray-300 mt-4">
+                                Creating visually compelling graphics, logos, and branding materials to elevate your
+                                business presence.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-lg w-[270px] transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                        before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                        style="--glow-color: #1ab4d6;">
+                        <img src="../images/web dev.jpg" alt="Web Development" class="w-full h-[180px] object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-center items-center gap-3 mt-2">
+                                <div
+                                    class="p-3 bg-blue-500 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="w-6 h-6 text-white">
+                                        <path d="m18 16 4-4-4-4"></path>
+                                        <path d="m6 8-4 4 4 4"></path>
+                                        <path d="m14.5 4-5 16"></path>
+                                    </svg>
+                                </div>
+                                <h2 class="text-2xl font-bold text-white">Web Development</h2>
+                            </div>
+                            <p class="text-center text-sm text-gray-300 mt-4">
+                                Building responsive and scalable web applications using modern frameworks like React and
+                                Node.js.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-lg w-[270px] transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                        before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                        style="--glow-color: #04d130;">
+                        <img src="../images/uiux.jpg" alt="UI/UX Design" class="w-full h-[180px] object-cover">
+                        <div class="p-6">
+                            <div class="flex justify-center items-center gap-3 mt-2">
+                                <div
+                                    class="p-3 bg-green-500 rounded-lg flex items-center justify-center w-[50px] h-[50px]">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        class="w-6 h-6 text-white">
+                                        <rect width="7" height="9" x="3" y="3" rx="1"></rect>
+                                        <rect width="7" height="5" x="14" y="3" rx="1"></rect>
+                                        <rect width="7" height="9" x="14" y="12" rx="1"></rect>
+                                        <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                                    </svg>
+                                </div>
+                                <h2 class="text-2xl font-bold text-white">UI/UX Design</h2>
+                            </div>
+                            <p class="text-center text-sm text-gray-300 mt-4">
+                                Designing intuitive and engaging user interfaces and experiences for web and mobile
+                                platforms.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+
+
+    <!--Skills-->
+    <section class="bg-gray-900" id="Skills">
+        <div class="flex flex-col items-center justify-center ">
+            <div class="flex flex-col items-center justify-center mt-10 lg:mt-20">
+                <h2 class="relative group mt-10"><span
+                        class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">Skills</span>
+                </h2>
+                <p class="text-medium mt-2 text-white font-medium text-center px-3 lg:text-ellipsis">
+                    A modern tech stack designed for impact, efficiency, and scale.
+                </p>
+                <div class="flex items-center space-x-2 mt-3">
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-5 md:gap-10 lg:gap-20 mt-10 lg:mt-10">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener noreferrer"
+                    class="group relative flex flex-col items-center p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                    before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #e34f26;">
+                    <div class="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                        style="background-color: rgba(227, 79, 38, 0.1);"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" role="img" viewBox="0 0 24 24" color="#e34f26"
+                            class="group-hover:brightness-100" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(227, 79, 38);">
+                            <path
+                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z">
+                            </path>
+                        </svg></div><span class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">HTML</span>
+                </a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer"
+                    class="group relative flex flex-col items-center p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #1572b6;">
+                    <div class="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                        style="background-color: rgba(21, 114, 182, 0.1);"><svg stroke="currentColor"
+                            fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" color="#1572b6"
+                            class="group-hover:brightness-100" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(21, 114, 182);">
+                            <path
+                                d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z">
+                            </path>
+                        </svg></div><span class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">CSS</span>
+                </a>
+
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                    rel="noopener noreferrer"
+                    class="group relative flex flex-col items-center p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                    before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #ffd600;">
+                    <div class="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                        style="background-color: rgba(255, 214, 0, 0.1);"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" role="img" viewBox="0 0 24 24" color="#ffd600"
+                            class="group-hover:brightness-100" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(255, 214, 0);">
+                            <path
+                                d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z">
+                            </path>
+                        </svg></div><span
+                        class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">JavaScript</span>
+                </a>
+                <a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"
+                    class="group relative flex flex-col items-center p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                    before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #06b6d4;">
+                    <div class="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                        style="background-color: rgba(6, 182, 212, 0.1);"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" role="img" viewBox="0 0 24 24" color="#06b6d4"
+                            class="group-hover:brightness-100" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(6, 182, 212);">
+                            <path
+                                d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z">
+                            </path>
+                        </svg></div><span class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">Tailwind
+                        CSS</span>
+                </a>
+                <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer"
+                    class="group relative flex flex-col items-center p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                    before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #f24e1e;">
+                    <div class="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                        style="background-color: rgba(242, 78, 30, 0.1);"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" role="img" viewBox="0 0 24 24" color="#f24e1e"
+                            class="group-hover:brightness-100" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(242, 78, 30);">
+                            <path
+                                d="M15.852 8.981h-4.588V0h4.588c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.491-4.49 4.491zM12.735 7.51h3.117c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-3.117V7.51zm0 1.471H8.148c-2.476 0-4.49-2.014-4.49-4.49S5.672 0 8.148 0h4.588v8.981zm-4.587-7.51c-1.665 0-3.019 1.355-3.019 3.019s1.354 3.02 3.019 3.02h3.117V1.471H8.148zm4.587 15.019H8.148c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h4.588v8.98zM8.148 8.981c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h3.117V8.981H8.148zM8.172 24c-2.489 0-4.515-2.014-4.515-4.49s2.014-4.49 4.49-4.49h4.588v4.441c0 2.503-2.047 4.539-4.563 4.539zm-.024-7.51a3.023 3.023 0 0 0-3.019 3.019c0 1.665 1.365 3.019 3.044 3.019 1.705 0 3.093-1.376 3.093-3.068v-2.97H8.148zm7.704 0h-.098c-2.476 0-4.49-2.014-4.49-4.49s2.014-4.49 4.49-4.49h.098c2.476 0 4.49 2.014 4.49 4.49s-2.014 4.49-4.49 4.49zm-.097-7.509c-1.665 0-3.019 1.355-3.019 3.019s1.355 3.019 3.019 3.019h.098c1.665 0 3.019-1.355 3.019-3.019s-1.355-3.019-3.019-3.019h-.098z">
+                            </path>
+                        </svg></div><span class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">Figma</span>
+                </a>
+                <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer"
+                    class="group relative flex flex-col items-center p-2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl shadow-md transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                    before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #00c7b7;">
+                    <div class="p-3 rounded-full transition-all duration-300 group-hover:scale-110"
+                        style="background-color: rgba(0, 199, 183, 0.1);"><svg stroke="currentColor" fill="currentColor"
+                            stroke-width="0" role="img" viewBox="0 0 24 24" color="#00c7b7"
+                            class="group-hover:brightness-100" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+                            style="color: rgb(0, 199, 183);">
+                            <path
+                                d="M6.49 19.04h-.23L5.13 17.9v-.23l1.73-1.71h1.2l.15.15v1.2L6.5 19.04ZM5.13 6.31V6.1l1.13-1.13h.23L8.2 6.68v1.2l-.15.15h-1.2L5.13 6.31Zm9.96 9.09h-1.65l-.14-.13v-3.83c0-.68-.27-1.2-1.1-1.23-.42 0-.9 0-1.43.02l-.07.08v4.96l-.14.14H8.9l-.13-.14V8.73l.13-.14h3.7a2.6 2.6 0 0 1 2.61 2.6v4.08l-.13.14Zm-8.37-2.44H.14L0 12.82v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14Zm17.14 0h-6.58l-.14-.14v-1.64l.14-.14h6.58l.14.14v1.64l-.14.14ZM11.05 6.55V1.64l.14-.14h1.65l.14.14v4.9l-.14.14h-1.65l-.14-.13Zm0 15.81v-4.9l.14-.14h1.65l.14.13v4.91l-.14.14h-1.65l-.14-.14Z">
+                            </path>
+                        </svg></div><span
+                        class="mt-2 text-sm font-medium text-gray-900 dark:text-gray-100">Netlify</span>
+                </a>
+            </div>
+    </section>
+
+
+    <!--Projects-->
+    <section class="bg-gray-900" id="Projects">
+        <div class="flex flex-col items-center justify-center gap-4 cursor-pointer">
+            <div class="flex flex-col items-center justify-center mt-10 lg:mt-20">
+                <h2 class="relative group mt-10"><span
+                        class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">Projects</span>
+                </h2>
+                <p class="text-medium mt-2 text-white font-medium text-center px-3 lg:text-ellipsis">
+                    Every project, a product. Every product, a solution with a story.
+                </p>
+                <div class="flex items-center space-x-2 mt-3">
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center gap-5 mt-5 md:grid md:grid-cols-2 lg:gap-10 lg:grid lg:grid-cols-3 ">
+                <div class="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-lg w-[270px] transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #17077d;">
+                    <img src="../images/web dev.jpg" alt="Web Development" class="w-full h-[180px] object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-center items-center gap-3 mt-2">
+                            <h2 class="text-2xl font-bold text-white">Portfolio Website</h2>
+                        </div>
+                        <p class="text-center text-sm text-gray-300 mt-4">
+                            My portfolio website, showcasing my professional background and more. Clean, responsive, and
+                            shows off my work while keeping things simple and professional.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-lg w-[270px] transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #342f2f;">
+                    <img src="../images/coffeshop.jpg" alt="Web Development" class="w-full h-[180px] object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-center items-center gap-3 mt-2">
+                            <h2 class="text-2xl font-bold text-white">coffee shop</h2>
+                        </div>
+                        <p class="text-center text-sm text-gray-300 mt-4">
+                            A cozy coffee haven serving rich, aromatic brews crafted from the finest beans.
+                            Perfect for relaxing, working, or catching up over a warm cup.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-xl overflow-hidden border border-white/20 shadow-lg w-[270px] transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-2xl 
+                 before:absolute before:inset-0 before:rounded-lg before:bg-gradient-to-br before:from-transparent before:to-[var(--glow-color,rgba(255,255,255,0))] before:opacity-0 before:blur-lg before:transition-all before:duration-500 hover:before:opacity-50"
+                    style="--glow-color: #d56215;">
+                    <img src="../images/BookSky.jpg" alt="Web Development" class="w-full h-[180px] object-cover">
+                    <div class="p-6">
+                        <div class="flex justify-center items-center gap-3 mt-2">
+                            <h2 class="text-2xl font-bold text-white">Book Sky</h2>
+                        </div>
+                        <p class="text-center text-sm text-gray-300 mt-4">
+                            An intuitive app for discovering, organizing, and tracking your favorite books.
+                            Your personal library and reading companion, anytime, anywhere.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Certifications-->
+    <section class="bg-gray-900" id="Certifications">
+        <div class="flex flex-col justify-center items-center">
+            <div class="flex flex-col items-center justify-center mt-10 lg:mt-20">
+                <h2 class="relative group mt-10"><span
+                        class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">Certifications</span>
+                </h2>
+                <p class="text-medium mt-2 text-white font-medium text-center px-3 lg:text-ellipsis">
+                    Credentials that back up the skills I apply in real-world scenarios.
+                </p>
+                <div class="flex items-center space-x-2 mt-3">
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                    <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                    <div
+                        class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center mt-10 ">
+                <div class="flex  flex-col gap-6 overflow-x-auto scrollbar-hide  md:grid md:grid-cols-2 xl:grid-cols-3">
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-[270px] h-[200px] flex-shrink-0 lg:w-[350px] lg:h-[200px]">
+                        <img src="/images/HTML.png" alt="Certification 1" class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-[270px] h-[200px] flex-shrink-0 lg:w-[350px] lg:h-[200px]">
+                        <img src="/images/CSS.png" alt="Certification 2" class="w-full h-full object-cover">
+                    </div>
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-[270px] h-[200px] flex-shrink-0 lg:w-[350px] lg:h-[200px] ">
+                        <img src="/images/JS.png" alt="Certification 3" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Education-->
+    <section class=" bg-gray-900" id="Education">
+        <div class="container mx-auto px-8 cursor-pointer">
+            <div class="mb-10 relative">
+                <div class="flex flex-col text-center items-center">
+                    <h2 class="relative group mt-10"><span
+                            class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">Education</span>
+                    </h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl font-medium">A solid academic
+                        foundation fueling my passion for tech innovation.</p>
+                    <div class="flex items-center space-x-2 mt-3">
+                        <div
+                            class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                        </div>
+                        <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                        <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                        <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                        <div
+                            class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-5xl mx-auto space-y-10">
+                <div
+                    class="relative group bg-white dark:bg-gray-900 p-4 sm:p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400">
+                    <div class="relative z-10 flex items-start gap-6">
+                        <div class="p-3 sm:p-4 bg-blue-100 dark:bg-blue-900 rounded-lg"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-graduation-cap w-6 h-6 text-blue-600 dark:text-blue-400">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                </path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg></div>
+                        <div class="flex-1">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100">B.E in
+                                Computer Science and Engineering</h3>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium">S.A.Engineering College,
+                                Chennai</p>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-3">
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg><span class="text-sm">2023 - 2027</span></div>
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-award w-4 h-4">
+                                        <circle cx="12" cy="8" r="6"></circle>
+                                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                    </svg><span class="text-sm">Score: 78%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[38px] bottom-0 w-[2px] h-10 bg-blue-300 dark:bg-blue-700 transform translate-y-full">
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-white dark:bg-gray-900 p-4 sm:p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400">
+                    <div class="relative z-10 flex items-start gap-6">
+                        <div class="p-3 sm:p-4 bg-blue-100 dark:bg-blue-900 rounded-lg"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-graduation-cap w-6 h-6 text-blue-600 dark:text-blue-400">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                </path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg></div>
+                        <div class="flex-1">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100">Senior
+                                Secondary (XII)</h3>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium">Sri Saraswathi vidyalaya
+                                Matriculation Higher
+                                Secondary School</p>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-3">
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg><span class="text-sm">2022 - 2023</span></div>
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-award w-4 h-4">
+                                        <circle cx="12" cy="8" r="6"></circle>
+                                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                    </svg><span class="text-sm">Score: 74%</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[38px] bottom-0 w-[2px] h-10 bg-blue-300 dark:bg-blue-700 transform translate-y-full">
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-white dark:bg-gray-900 p-4 sm:p-8 rounded-xl shadow-lg hover:shadow-xl border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400">
+                    <div class="relative z-10 flex items-start gap-6">
+                        <div class="p-3 sm:p-4 bg-blue-100 dark:bg-blue-900 rounded-lg"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="lucide lucide-graduation-cap w-6 h-6 text-blue-600 dark:text-blue-400">
+                                <path
+                                    d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z">
+                                </path>
+                                <path d="M22 10v6"></path>
+                                <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                            </svg></div>
+                        <div class="flex-1">
+                            <h3 class="text-lg sm:text-xl font-semibold text-gray-900 dark:text-gray-100">Secondary (X)
+                            </h3>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium">Sri Saraswathi vidyalaya higher
+                                secondary school</p>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-3">
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-calendar w-4 h-4">
+                                        <path d="M8 2v4"></path>
+                                        <path d="M16 2v4"></path>
+                                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                        <path d="M3 10h18"></path>
+                                    </svg><span class="text-sm">2020 - 2021</span></div>
+                                <div class="flex items-center gap-1 text-gray-600 dark:text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-award w-4 h-4">
+                                        <circle cx="12" cy="8" r="6"></circle>
+                                        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                                    </svg><span class="text-sm">Score: NULL</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="dark:bg-gray-900" id="Contact">
+        <div class="container mx-auto px-4">
+            <div class="mb-10 relative ">
+                <div class="flex flex-col text-center items-center">
+                    <h2 class="relative group mt-10"><span
+                            class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-800 via-gray-900 to-blue-800 dark:from-blue-500 dark:via-white dark:to-blue-500 bg-clip-text text-transparent leading-tight tracking-tight">Get
+                            In Touch</span></h2>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl font-medium">Let's collaborate on your
+                        next big idea — I'm just a message away.</p>
+                    <div class="flex items-center space-x-2 mt-2">
+                        <div
+                            class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                        </div>
+                        <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                        <div class="w-1 h-1 rounded-full bg-gray-600 dark:bg-gray-300 opacity-60"></div>
+                        <div class="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 opacity-80"></div>
+                        <div
+                            class="h-px w-16 bg-gradient-to-r from-transparent via-blue-600 dark:via-blue-400 to-transparent">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800 dark:text-gray-100">Let's Connect</h3>
+                    <p class="text-gray-600 dark:text-gray-300 mb-8">I'm always open to discussing new projects,
+                        creative ideas, or opportunities to be part of your visions.</p>
+                    <div class="space-y-4"><a href="mailto:arishigowtham@gmail.com"
+                            class="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-mail w-6 h-6">
+                                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                            </svg><span>arishigowtham@gmail.com</span></a><a href="https://github.com/RISHIGOWTHAM-A"
+                            target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-github w-6 h-6">
+                                <path
+                                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                </path>
+                                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                            </svg><span>github.com/rishigowtham</span></a><a
+                            href="https://www.linkedin.com/in/rishi-gowtham-3816182a4/" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-3 text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-linkedin w-6 h-6">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg><span>linkedin.com/rishigowtham</span></a></div>
+                </div>
+                <div class="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+                    <form class="space-y-6">
+                        <div><label for="name" class="block text-sm font-medium mb-2 text-white">Name</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-3 flex items-center text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-user w-5 h-5">
+                                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg></div><input type="text" id="name" name="name" required=""
+                                    placeholder="Enter your name"
+                                    class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                                    value="">
+                            </div>
+                        </div>
+                        <div><label for="email" class="block text-sm font-medium mb-2 text-white">Email</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-3 flex items-center text-gray-400"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" class="lucide lucide-mail w-5 h-5">
+                                        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                    </svg></div><input type="email" id="email" name="email" required=""
+                                    placeholder="Enter your email"
+                                    class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+                                    value="">
+                            </div>
+                        </div>
+                        <div><label for="message" class="block text-sm font-medium mb-2 text-white">Message</label>
+                            <div class="relative">
+                                <div class="absolute top-3 left-3 text-gray-400"><svg stroke="currentColor"
+                                        fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="w-5 h-5"
+                                        height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M144 208c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm112 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zm112 0c-17.7 0-32 14.3-32 32s14.3 32 32 32 32-14.3 32-32-14.3-32-32-32zM256 32C114.6 32 0 125.1 0 240c0 47.6 19.9 91.2 52.9 126.3C38 405.7 7 439.1 6.5 439.5c-6.6 7-8.4 17.2-4.6 26S14.4 480 24 480c61.5 0 110-25.7 139.1-46.3C192 442.8 223.2 448 256 448c141.4 0 256-93.1 256-208S397.4 32 256 32zm0 368c-26.7 0-53.1-4.1-78.4-12.1l-22.7-7.2-19.5 13.8c-14.3 10.1-33.9 21.4-57.5 29 7.3-12.1 14.4-25.7 19.9-40.2l10.6-28.1-20.6-21.8C69.7 314.1 48 282.2 48 240c0-88.2 93.3-160 208-160s208 71.8 208 160-93.3 160-208 160z">
+                                        </path>
+                                    </svg></div><textarea id="message" name="message" required=""
+                                    placeholder="Enter your message" rows="4"
+                                    class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-100 dark:bg-gray-800 placeholder-gray-500 dark:placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none resize-none"></textarea>
+                            </div>
+                        </div><button type="submit"
+                            class="w-full py-3 px-6 rounded-lg flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white">Send
+                            Message<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                                stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 12v3a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h7"></path>
+                                <path d="M16 3h5v5"></path>
+                                <path d="m16 8 5-5"></path>
+                            </svg></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class=" dark:bg-gray-900">
+        <div class="container mx-auto px-6 py-8 relative">
+            <div class="flex flex-col items-center gap-6">
+                <nav class="flex flex-wrap gap-4 justify-center">
+                    <a href="#Home"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#about"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
+                    <a href="#Skills"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#Projects"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#Certifications"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Certifications</a>
+                    <a href="#Education"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Education</a>
+                    <a href="#Contact"
+                        class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+                </nav>
+                <div class="scale-90">
+                    <div class="flex flex-wrap gap-2 justify-center md:justify-start"><a
+                            href="https://github.com/RISHIGOWTHAM-A" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub"
+                            class="group relative p-3 bg-white dark:bg-gray-900 rounded-lg hover:scale-110 transform transition-transform duration-300 border border-gray-200 dark:border-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            </div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="lucide lucide-github w-6 h-6 text-gray-900 dark:text-white">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+                                    </path>
+                                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                                </svg></div>
+                        </a><a href="https://www.linkedin.com/in/rishi-gowtham-3816182a4/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn"
+                            class="group relative p-3 bg-white dark:bg-gray-900 rounded-lg hover:scale-110 transform transition-transform duration-300 border border-gray-200 dark:border-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            </div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-linkedin w-6 h-6 text-[#0077B5]">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                    </path>
+                                    <rect width="4" height="12" x="2" y="9"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg></div>
+                        </a><a href="https://www.instagram.com/_justt.rishi___?igsh=MXdrOG95Y2s1cmp4dQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer"
+                            aria-label="Instagram"
+                            class="group relative p-3 bg-white dark:bg-gray-900 rounded-lg hover:scale-110 transform transition-transform duration-300 border border-gray-200 dark:border-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            </div>
+                            <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-instagram w-6 h-6 text-[#E1306C]">
+                                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                                </svg></div>
+                        </a><a href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                            class="group relative p-3 bg-white dark:bg-gray-900 rounded-lg hover:scale-110 transform transition-transform duration-300 border border-gray-200 dark:border-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            </div>
+                            <div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                    class="w-6 h-6 text-[#25D366]" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z">
+                                    </path>
+                                </svg></div>
+                        </a><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener noreferrer"
+                            aria-label="Gmail"
+                            class="group relative p-3 bg-white dark:bg-gray-900 rounded-lg hover:scale-110 transform transition-transform duration-300 border border-gray-200 dark:border-gray-800">
+                            <div
+                                class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                            </div>
+                            <div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                    class="w-6 h-6 text-[#D44638]" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
+                                    </path>
+                                </svg></div>
+                        </a></div>
+                </div>
+                <div class="text-sm text-gray-500 dark:text-gray-400 text-center">
+                    <p>© 2025 A Rishi. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
